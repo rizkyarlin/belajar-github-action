@@ -17,6 +17,14 @@ class CalculatorTestCase(unittest.TestCase):
         result = calculator.divide(x, y)
         self.assertEqual(result, correct_result)
 
+    def test_sum_three_numbers_correct(self):
+        x = 1
+        y = 2
+        z = 3
+        correct_result = x + y + z
+        result = calculator.sum_three_numbers(x, y, z)
+        self.assertEqual(result, correct_result)
+
 
 if __name__ == '__main__':
     unittest.main()
